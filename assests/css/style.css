@@ -16,7 +16,7 @@ body {
     background: linear-gradient(
         to right,
         #7138a7,
-        #317c3e,
+        #38317c,
         #7138a7
     );
     font-family: lato , 'sans-serif';
@@ -31,11 +31,13 @@ body {
 
 header {
     width: 100%;
-    height: 70px;
+    height: 200px;
     margin: 0 auto;
+    height: 200px;
     text-align: center;
     padding: .5em 0;
-    margin: 100px;
+    margin-left: 100px;
+    margin-top: 70px;
 }
 
 h1 {
@@ -48,12 +50,12 @@ h1 {
 }
 
 h1 a {
-    color: #111407;
+    color: whitesmoke
 }
 
 h1 a:hover,
 h1 a:focus {
-    color: #f0f0f0;
+    color: #249216;
 }
 .mainpage {
     width: 700px;
@@ -64,9 +66,11 @@ h1 a:focus {
 }
 
 .logo {
-    margin-right: 700px;
+    margin-right: 600px;
     border-radius: 30px;
     display: block;
+    width: auto;
+    
 }
 
 input[type="text"] {
@@ -85,14 +89,14 @@ input[type="text"] {
 .mainpage > h2 {
     font-size: 1.5rem;
     margin-bottom: 1.25em;
-    color: black;
+    color: whitesmoke;
 }
 input[type="button"] {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 .input-label {
-    color: black;
+    color:whitesmoke;
 }
 
 .btn {
@@ -110,5 +114,15 @@ input[type="button"] {
 
 .btn-start, .btn-submit {
     color: #fff;
-    background-color: #6a0ea8;
+    background-color: #249216;
 }
+
+@media screen and (max-width: 762px) {
+    h1{
+        font-size: 60px;
+    }
+    .logo {
+        width: auto;
+    }
+}
+    
