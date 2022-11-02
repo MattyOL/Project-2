@@ -21,4 +21,15 @@ function validateUserInput(user) {
     } 
 
     
- 
+    if (errorMsg != '') {
+        
+        feedback.innerHTML = errorMsg;
+        
+
+        username.setAttribute('data-has-error', 'true');
+        
+        return false;
+    }
+    
+    return true;
+}
