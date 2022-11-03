@@ -17,7 +17,7 @@ function validateUserInput(user) {
      
     } else if (user.length <= Number(2)) {
 
-        errorMsg = "Username must have 3 or more characters";
+        errorMsg = "Username must be valid";
     } 
 
     
@@ -32,4 +32,15 @@ function validateUserInput(user) {
     }
     
     return true;
+}
+
+
+function needUserName() {
+
+    let user = username.value;
+
+    if (validateUserInput(user)) { 
+        
+        window.location.replace(`quiz.html?user=${user}`);     
+    }
 }

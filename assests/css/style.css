@@ -117,12 +117,52 @@ input[type="button"] {
     background-color: #249216;
 }
 
+/* Quizhtml page  */
+.answer-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: yellow;
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.answer-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 green;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.answer-prefix {
+    padding: 2rem 2.5rem;
+    color: purple;
+}
+
+.answer-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* media queries*/
 @media screen and (max-width: 762px) {
+
     h1{
         font-size: 60px;
     }
     .logo {
         width: auto;
+    }
+
+    .answer-container {
+        min-width: 40rem;
     }
 }
     
