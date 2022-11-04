@@ -2,9 +2,6 @@ const username = document.getElementById('user-input');
 const feedback = document.getElementById('feedback');
 
 
-
-
-
 function validateUserInput(user) {
     
     let errorMsg = '';
@@ -15,7 +12,7 @@ function validateUserInput(user) {
         errorMsg = "Please enter a Username";
     
      
-    } else if (user.length <= Number(2)) {
+    } else if (user.length <= Number(3)) {
 
         errorMsg = "Username must be valid";
     } 
