@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     display: flex;
 }
-
+/* home-page */
 .container {
     width: 940px;
     background-color: blueviolet;
@@ -52,6 +52,11 @@ body {
     
 }
 
+.right-side ul li {
+    margin-top: 12px;
+
+}
+
 .right-side a {
     border-radius: 90px;
     text-decoration: none;
@@ -63,4 +68,28 @@ body {
     text-align: center;
     margin-top: 40px;
     font-size: 30px;
+}
+
+/* Quiz-Game-Area*/
+
+.space-box {
+    width: 650px;
+    background-color: blueviolet;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1.0);
+    border-radius: 14px;
+    min-height: 350px;
+    padding: 80px 90px;
+    display: flex;
+    padding: 50px;
+}
+
+.logo {
+    font-size: 25px;
+
+}
+
+.header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
 }
