@@ -11,37 +11,24 @@
         <title>QuiZ Roulette</title>
     </head>
     <body>
-    
-    <header>
-        <h1>
-            <a href="index.html">INTERSTELLAR</a>
-        </h1>
-    </header>
-
-    <main class="mainpage">
-
-        <img src="assests/Screen Shot 2022-11-02 at 15.30.44.png" alt="Space Quiz" class="logo">
-        <h2>TEST UR SPACE KNOWLEDGE NOW!</h2>
-        
-        <form class="form">
-            <div>
-                <label for="user-input" class="input-label">Create a Username</label> 
-                <br>
-                <input id="user-input" type="text" name="username" title="Enter Username here" data-error="Username must be valid" aria-labelledby="user-input user-error" required="">
-                <div class="error" aria-live="assertive" aria-relevant="additions removals" id="user-error">
-                    <p id="feedback"></p>
-                    <p id="errormessage"></p>
-                </div>
+        <div class="container">
+            <div class="left-side">
+                <img src="assests/Screen Shot 2022-11-02 at 15.30.44.png" alt="space-quiz">
+            </div>
+            <div class="right-side">
+                <h1>INTERSTELLAR</h1>
+                <ul>
+                    <li>5 Questions in Total</li>
+                    <li>Timer countdown (3.5 minutes)</li>
+                    <li>Question's are All Space-Related</li>
+                </ul>
+                <a href="quiz.html">Start Quiz</a>
             </div>
 
-            <div>
-                <input type="button" class="btn btn-start" value="START NOW" onclick="needUserName();">
-            </div>
+        </div>
+   
 
-
-        </form>
     
-    </main>
       
         <script src="assests/js/script.js"></script>
     </body>

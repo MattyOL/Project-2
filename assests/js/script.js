@@ -41,3 +41,4 @@ function needUserName() {
         window.location.replace(`quiz.html?user=${user}`);     
     }
 }
+
