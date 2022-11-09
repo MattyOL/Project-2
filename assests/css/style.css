@@ -87,8 +87,9 @@ body {
 .timerBox {
     border-radius: 100px;
     padding: 10px 15px;
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
     color: black;
+    background-color: aqua;
 }
 
 .header {
@@ -133,4 +134,36 @@ body {
    border: 0;
    outline: none;
    font-size: 15px;
+}
+
+.resultBox {
+    margin-bottom: 30px;
+    grid-row-gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.resultBox *:nth-child(odd) {
+    text-align: right;
+}
+
+.resultBox span {
+    font-weight: 600;
+}
+
+.restartButton {
+    text-align: center;
+}
+
+.restartButton a {
+    background-color: yellow;
+    color: black;
+    border-radius: 50px;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 30px;
+    display: inline-block;
+
 }

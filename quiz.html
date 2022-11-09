@@ -11,9 +11,9 @@
         <title>QuiZ Roulette</title>
     </head>
     <Body>
-            <div class="space-box">
+            <div class="space-box" id="questionsContainer" style="display: none;" >
                <div class="logo">
-                   
+                   <h1>INTERSTELLAR</h1>
                </div>
 
                <div class="header">
@@ -37,6 +37,25 @@
                 </div>
             </div>
 
+
+            <div class="space-box" id="resultsContainer">
+                <div class="logo">
+                    <h1>INTERSTELLAR Quiz Results</h1>
+                </div>
+                <div class="resultBox">
+                    <label>Questions : </label>
+                    <span id="totalQuestion">10</span>
+                    <label>Attempt : </label>
+                    <span id="totalQuestion">01</span>
+                    <label>Correct : </label>
+                    <span id="correctAnswers">01</span>
+                    <label>Incorrect : </label>
+                    <span id="incorrectAnswers">01</span>
+                </div>
+                <div class="restartButton">
+                    <a href="index.html">Retry Quiz</a>
+                </div>
+            </div>
             
         
     
