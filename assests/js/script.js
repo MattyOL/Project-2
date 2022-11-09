@@ -1,4 +1,22 @@
-$
+$(function () {
+    //timer countdown
+
+    let totalTime = 200;
+    let min = 0;
+    let sec = 0;
+    let counter = 0;
+
+    let timer = setInterval(function (){
+        counter++;
+        min = Math.floor((totalTime - counter) / 60);
+        sec = totalTime - min * 60 - counter;
+
+        $(".timerBox span").text(min + ":" + sec);
+
+    
+        
+    }, 1000);  
+});
 
 
 
