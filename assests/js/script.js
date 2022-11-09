@@ -1,4 +1,11 @@
-const username = document.getElementById('user-input');
+$
+
+
+
+
+
+
+/*const username = document.getElementById('user-input');
 const feedback = document.getElementById('feedback');
 
 
@@ -41,4 +48,4 @@ function needUserName() {
         window.location.replace(`quiz.html?user=${user}`);     
     }
 }
-
+*/
