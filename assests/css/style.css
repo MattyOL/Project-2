@@ -98,6 +98,10 @@ input[type="text"] {
     text-align: center;
     color: #2D232E;
 }
+.btn-start, .btn-submit {
+    color: #fff;
+    background-color: #249216;
+}
 /* Quiz-Game-Area*/
 
 .space-box {
@@ -182,7 +186,13 @@ input[type="text"] {
 .restartButton {
     text-align: center;
 }
-
+input[type="button"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.input-label {
+    color: black;
+}
 .restartButton a {
     background-color: yellow;
     color: black;
@@ -194,6 +204,11 @@ input[type="text"] {
     margin-top: 30px;
     display: inline-block;
 
+}
+
+h2 {
+    margin-left: 170px;
+    display: flex;
 }
 
 /*Media Querys */

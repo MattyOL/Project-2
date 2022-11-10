@@ -1,4 +1,4 @@
-$(function () {
+/*$(function () {
     //timer countdown
 
     let totalTime = 200;
@@ -6,7 +6,7 @@ $(function () {
     let sec = 0;
     let counter = 0;
 
-    let timer = setInterval(function (){
+    let timer = setInterval(function () {
         counter++;
         min = Math.floor((totalTime - counter) / 60);
         sec = totalTime - min * 60 - counter;
@@ -16,14 +16,29 @@ $(function () {
     
         
     }, 1000);  
-});
+});*/
+const startingMinutes = 10;
+let time = startingMinutes * 60;
+
+const countdownEl = document.getElementsByClassName("timerbox");
+
+setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+    
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    countdownEl.innerHTML = '${minutes}: ${seconds}';
+    time--;
+
+}
 
 
 
 
 
-
-/*const username = document.getElementById('user-input');
+const username = document.getElementById('user-input');
 const feedback = document.getElementById('feedback');
 
 
@@ -66,4 +81,3 @@ function needUserName() {
         window.location.replace(`quiz.html?user=${user}`);     
     }
 }
-*/
